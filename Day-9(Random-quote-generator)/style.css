@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #003049; */
+    font-family: "Bruno Ace SC", sans-serif;
+    color: rgb(0, 0, 0);
+}
+body{
+/* background-image: url('https://images.unsplash.com/photo-1682686578601-e7851641d52c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3MXx8fGVufDB8fHx8fA%3D%3D');
+backdrop-filter: brightness(0.5);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; */
+background-color: rgb(40, 40, 40);
+}
+.container{
+    height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 29px;
+  position: relative;
+  backdrop-filter: blur(3px);
+}
+.container .next-btn{
+    position: absolute;
+    position: absolute;
+  top: 71%;
+  left: 68%;
+}
+.container .next-btn button{
+border: 1px solid black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.container .next-btn button:hover{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+.quote-div{
+    background-color: #77ebf7;
+    /* height: 240px; */
+    width: 50%;
+    box-shadow:0px 0px 9px -3px black;
+    border-top-right-radius: 99px;
+    border-bottom-left-radius: 99px;
+    padding: 15px;
+}
+.quote-div{
+    position: relative;
+}
+.quote-div .title{
+    text-align: center;
+}
+.quote-div .title h1{
+    position: relative;
+}
+.quote-div .title h1::after{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    content: '';
+    height: 4px;
+    width: 15%;
+    background-color: black;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: all 0.5s ease-in ;
+}
+.quote-div .title h1:hover::after{
+    transform: scale(1);
+}
+.quote-div .quote{
+    margin: 8px;
+}
+.quote-div .quote p{
+
+    padding: 20px;
+}
+.quote .left{
+    position: absolute;
+    top: 20%;
+  left: 2%;
+  font-size: 2rem;
+}
+.quote .right{
+    position: absolute;
+    top: 69%;
+  right: 7%;
+  font-size: 2rem;
+}
+.author{
+    position: absolute;
+  right: 25%;
+  top: 85%;
+  font-size: 12px;
+}
+@media (min-width:320px) and (max-width:480px){
+    .quote-div{
+        width: 80%;
+    }
+    .quote .right {
+        top: 82%;
+    }
+    .quote .left {
+        top: 13%;
+    }
+}
+@media (min-width:481px) and (max-width:992px){
+    .quote-div{
+        width: 75%;
+    }
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background-color: rgb(188, 73, 255);
+}
+
+.heading h2 {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.heading h2::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 32%;
+    height: 4px;
+    width: 35%;
+
+    border-radius: 5px;
+    background-color: white;
+}
+
+.heading {
+    padding: 25px 0;
+}
+
+.searchform form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.searchform form #inputSearch {
+    height: 25px;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.318);
+    outline: 0;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.searchform form #inputSearch:focus {
+    outline: 2px solid rgb(255, 16, 235);
+}
+
+.searchform form #searchBtn {
+    margin-left: 15px;
+    border: 0;
+    background-color: rgb(0, 0, 251);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.searchform form #searchBtn:hover {
+    background-color: rgb(100, 32, 249);
+    color: rgb(255, 255, 255);
+
+}
+
+.images {
+    color: white;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDiv {
+    width: 300px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.imgDiv img {
+    width: 300px;
+    height: 210px;
+}
+
+.loadBtn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.loadBtn #loadMoreBtn {
+    padding: 5px 10px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    display: none;
+    margin-top: 10px;
+}
+
+.loadBtn #loadMoreBtn:hover {
+    background-color: rgba(35, 35, 254, 0.723);
+}
+
+
+.imgDiv h4 {
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    transform: translateY(230px);
+    transition: all 0.5s ease-in-out;
+    text-wrap: balance;
+}
+
+.imgOverly {
+    width: 300px;
+    height: 210px;
+    position: absolute;
+    background-color: #0000009c;
+    top: 0;
+    transform: translateY(212px);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.imgDiv:hover h4 {
+    transform: translateY(57px);
+}
+
+.imgDiv:hover .imgOverly {
+    transform: translateY(0);
+
+}

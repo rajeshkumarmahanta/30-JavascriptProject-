@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#imgList img:hover{
+    cursor: url('delete.png'), auto;
+}

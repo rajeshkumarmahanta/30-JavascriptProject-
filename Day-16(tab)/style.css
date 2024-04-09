@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-bar {
+    background-color: rgb(49, 106, 240);
+    
+    display: flex;
+    gap: 10px;
+}
+
+.tab-bar .tab-btn {
+    padding: 15px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    transition: all 0.3s;
+    white-space: 0;
+}
+.container .tab-container{
+    overflow: hidden;
+    width: 40%;
+    height: 250px;
+    
+}
+.tab-bar .tab-btn:hover {
+    background-color: rgb(192, 49, 240);
+}
+
+.container .tab-content {
+    position: relative;
+    color: white;
+    z-index: -1;
+}
+.tab-btn.active{
+    background-color: rgb(192, 49, 240);
+}
+.container .tab-content .content{
+    position: absolute;
+    background-color: rgb(192, 49, 240);
+    transform: translateY(-150%);
+    transition: all 0.3s ease-in-out;
+}
+.container .tab-content .content.active{
+    transform: translateY(0);
+}
+.container .tab-content .content h2{
+    padding: 15px;
+    background-color: rgb(192, 49, 240);
+}
+.container .tab-content .content p{
+    padding: 15px;
+    background-color: rgb(170, 56, 208);
+}

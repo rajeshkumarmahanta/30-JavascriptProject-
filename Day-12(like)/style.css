@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 463px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .card-img {
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.card-top {
+    display: flex;
+
+}
+
+.card-top-left {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-top-right span {
+    font-size: 700;
+}
+
+.card-top-left img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.time {
+    position: relative;
+    padding: 0 11px;
+    color: rgba(0, 0, 0, 0.574);;
+}
+
+.time::before {
+    content: "";
+    height: 3px;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.574);
+    top: 4px;
+    position: absolute;
+    padding: 1px;
+    border-radius: 50%;
+    left: 3px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.card .card-img img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.love-icon,
+.share-icon,
+.comment-icon,
+.save-icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.icons #like {
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform ease 0.4s;
+}
+
+.bottom-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.text {
+    padding: 5px;
+    position: relative;
+}
+
+.likes-img {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.like-num {
+    padding-left: 5px;
+    position: absolute;
+    left: 17%;
+}
+
+.likes-img img {
+    width: 5%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.img-1 {
+    position: absolute;
+    left: 3%;
+}
+
+.img-2 {
+    position: absolute;
+    left: 7%;
+}
+
+.img-3 {
+    position: absolute;
+    left: 11%;
+}
+
+.text-name {
+    padding: 7px;
+}
+
+.card-top-right {
+    font-weight: bold;
+    font-size: 30px;
+}

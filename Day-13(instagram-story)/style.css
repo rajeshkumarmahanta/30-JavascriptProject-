@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-screen {
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    display: none;
+}
+.cross{
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 1;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  border: 0;
+}
+.story-frofile {
+    position: absolute;
+    z-index: 1;
+    
+}
+.story-img img{
+    width: 300px;
+    height: 450px;
+    opacity: 0.8;
+}
+.story-frofile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 0 0 10px;
+   border: 2px solid red;
+   object-fit: cover;
+
+}
+
+.story-frofile h6 {
+    color: white;
+    padding-left: 25px;
+}
+
+.post img {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    padding: 5px;
+
+
+}
+
+.stories {
+ height: 100px;
+ width: 100%;
+ border-radius: 10px;
+ white-space: nowrap;
+ overflow-x: auto;
+ overflow-y: hidden;
+ -ms-overflow-style: none;  
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+}
+.stories::-webkit-scrollbar{
+    display: none;
+}
+.stories .story {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+    border:3px solid red;
+    overflow: hidden;
+    cursor: pointer;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}

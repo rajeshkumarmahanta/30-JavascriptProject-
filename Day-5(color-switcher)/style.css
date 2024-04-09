@@ -1,0 +1,13 @@
+#grey{
+    background-color: grey;
+}
+
+.button{
+  height: 100px;
+  width: 100px; 
+  border: 2px solid black;
+  display: inline;
+}
+.button{
+    cursor: pointer;
+}

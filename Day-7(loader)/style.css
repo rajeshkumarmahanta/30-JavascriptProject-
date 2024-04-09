@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loader{
+    height: 50px;
+    width: 50px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: loader 3s linear infinite;
+    transition: all 0.5s;
+    position: absolute;
+  top: 50%;
+  right: 48%;
+}
+
+@keyframes loader {
+    to{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .button button {
+    position: relative;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.container .button button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.container .button button::after {
+    content: '';
+    height: 36px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.container .button button::before {
+    content: '';
+    height: 36px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.container .button button:hover::before {
+
+    transform: translateX(50%);
+}
+
+.container .button button:hover::after {
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    visibility: hidden;
+    /* background-color: rgba(0, 0, 0, 0.241); */
+}
+.modal-container.activeModalContainer{
+    visibility: visible;
+    background-color: #8d8d8de3;
+}
+.modal {
+    height: 220px;
+    width: 500px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    transform: translateY(-250%);
+    transition: all 0.5s;
+}
+
+.modal.activeModal {
+    transform: translateY(0%);
+}
+
+.modal .modal-close {
+
+    text-align: end;
+}
+
+.modal .text {
+    margin: 20px 10px;
+}
+
+.modal .modal-close-x {
+    text-align: end;
+}
+
+.modal .modal-close-x button {
+
+    border: 0;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 11px;
+}
+
+.modal-close button {
+    position: relative;
+    padding: 7px 17px;
+    border: 1px solid rgb(255, 243, 243);
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.modal-close button:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
