@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="offer-bar">
+            <div class="offer">
+                <div class="icon">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="33.2 33.397 133.9 133.103"
+                        viewBox="33.2 33.397 133.9 133.103" height="25" width="25" xmlns="http://www.w3.org/2000/svg"
+                        data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <defs>
+                            <style>
+                                #comp-km3aq0q0 svg [data-color="1"] {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <path
+                                d="M165.7 61.6L137.2 49l-34.9-15.2c-1.3-.6-2.7-.5-3.9.1L71 46.8c-.5.1-1 .4-1.5.7L35.8 63.4c-.1.1-.2.1-.3.2-.1 0-.2.1-.2.1-.1 0-.1.1-.2.1l-.2.1c-.2.2-.4.3-.6.6l-.1.1c-.2.2-.3.4-.4.6 0 0-.1.1-.1.2-.1.2-.2.5-.3.7v.1c-.1.2-.1.4-.2.6v66.8c0 1.9 1.1 3.6 2.8 4.3l61.7 28.2h.1c.2.1.5.2.8.3h.2c.2 0 .5.1.7.1h.2c.3 0 .6 0 1-.1h.2c.3-.1.6-.2.8-.3.1 0 .1 0 .1-.1l62.6-30.8c1.6-.8 2.7-2.5 2.7-4.3V63.4c-.2-.8-.7-1.5-1.4-1.8zm-45.6 18.9L99.5 90.6l-50.3-23 23.1-10.9 47.8 23.8zm26.7-13.2c-1.1.5-2.2 1.1-3.2 1.5l-12.7 6.3-47.6-23.5 17.2-8.1L136.3 59c3.6 1.7 10 4.4 14.6 6.4-1.4.7-2.8 1.3-4.1 1.9zm-42.5 31.6l22.4-11 2 23c.2 2.5 2.3 4.4 4.8 4.4h.4c2.6-.2 4.6-2.6 4.3-5.2l-2.4-26.7 14.2-7c1.9-1 4.8-2.4 7.3-3.5V128l-53 26.1V98.9zm-9.5.1v55.4l-52.1-23.8V75.2L94.8 99z"
+                                fill="#FFF" data-color="1"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text">
+                    <p>Free Shipping for orders over $50</p>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="about.html" class="navlink">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="navlink">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="help.html" class="navlink">Help center</a>
+                    </li>
+                    <li class="nav-item">
+                        <span>call us</span><a href="#" class="navlink">123-456-7890</a>
+                    </li>
+
+                </ul>
+            </div>
+            <span class="bar-icon"> <i id="bIcn" class="fa-solid fa-bars"></i> </span>
+        </nav>
+        <div class="navBar-Sticky">
+            <div class="second-header">
+                <div class="left">
+                    <div class="text-logo">
+                        <a href="index.html">TechShed</a>
+                    </div>
+                    <div class="searchDiv">
+                        <form>
+                            <div class="searchBar">
+                                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search..."
+                                    value="" />
+                                <a id="searchQuerySubmit" class="text-black" type="submit" name="searchQuerySubmit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </div>
+                        </form>
+                        <!-- <div class="search">
+                        <input type="search"> <button type="search" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div> -->
+                    </div>
+                </div>
+                <div class="right">
+
+
+                    <div class="login"><a href="#"><span class="circle-user"><i
+                                    class="fa-solid fa-circle-user"></i></span>Login</a></div>
+                    <div class="wishList"><a href="#"><span class="heart-icon"><i
+                                    class="fa-regular fa-heart"></i></span></a></div>
+                    <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span
+                                class="cart-number">0</span></a></div>
+
+                </div>
+
+            </div>
+            <div class="third-header">
+                <span class="bar-icon-third"> <i id="bIcnThird" class="fa-solid fa-bars"></i> </span>
+                <div class="third-menu">
+                    <ul class="third-menu-items">
+                        <li><a href="#">Shop all</a></li>
+                        <li><a href="#">Conputers</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Drone & cameras</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">T.V & Home cinema</a></li>
+                        <li><a href="#">wearable tech</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+    </header>
+    <!-- login modal -->
+    <div class="login-modal login-modal-visible">
+        <div class="close-login-form">
+            <span><i class="fa-solid fa-x"></i></span>
+        </div>
+        <div class="inner">
+
+            <form>
+
+                <div class="login-form">
+                    <img src="img/img_avatar.png" alt="">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" autocomplete="off">
+                    <label for="pwd">Password</label>
+                    <input type="password" id="pwd">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- side cart -->
+    <div class="overlay-cart">
+        <div class="cart-popup">
+            <div class="cart-content">
+                <div class="icon">
+                    <span class="cart-icon-bar"> <i class="fa-solid fa-x"></i> </span>
+                </div>
+                <div class="text">
+                    <h4>Cart</h4>
+                    <ul>
+                        <li>Cart 1</li>
+                        <li>Cart 2</li>
+                        <li>Cart 3</li>
+                        <li>Cart 4</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="slider-up">
+        <div class="text">
+            <span> Best Prices </span>
+            <h2>Incredible Prices <br>on All Your<br> Favorite Items</h2>
+            <p>Get more for less on selected brands</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+    <section class="slider-section">
+
+        <div class="slider">
+            <div class="text">
+                <span> Best Prices </span>
+                <h2>Incredible Prices <br>on All Your<br> Favorite Items</h2>
+                <p>Get more for less on selected brands</p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner-left">
+            <div class="img">
+                <img src="img/iphone.webp" alt="">
+            </div>
+            <div class="text">
+                <p>Holiday Deals</p>
+                <h1>Up to<br>30% off</h1>
+                <p>Selected Smartphone Brands </p>
+                <button>Shop</button>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="img">
+                <img src="img/head-phone.webp" alt="">
+            </div>
+            <div class="text">
+                <p>Just In</p>
+                <h1>Take Your<br> Sound<br>Anywhere</h1>
+                <p>Top Headphone Brands </p>
+                <button>Shop</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="facility-section">
+        <div class="facilities">
+            <div class="curb">
+                <div class="icon">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="21 41.657 157.001 114.861"
+                        viewBox="21 41.657 157.001 114.861" height="56" width="41" xmlns="http://www.w3.org/2000/svg"
+                        data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <defs>
+                            <style>
+                                #comp-km3aq0p4 svg [data-color="1"] {
+                                    fill: #000000;
+                                }
+
+                                #comp-km3aq0p4 svg [data-color="2"] {
+                                    fill: #751FFF;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <path
+                                d="M175.39 129.667h-5.351c-1.271-12.926-11.875-23.154-24.964-23.831-.036-.126-.071-.252-.127-.374-.641-1.403-15.725-34.436-19.432-41.851-2.948-5.895-5.401-7.887-9.157-7.58a2.608 2.608 0 0 0-1.009-.203H92.228a2.61 2.61 0 1 0 0 5.22h11.656c-1.502 1.22-2.601 2.649-3.253 4.288-1.381 3.47-.265 6.516-.008 7.133l14.542 37.811c.177.46.279.908.303 1.335.123 2.159-.355 3.783-1.46 4.965-2.063 2.206-5.72 2.271-5.744 2.271H83.779a4.11 4.11 0 0 1-3.303-1.648c-8.229-11.151.348-21.995 6.193-27.467a3.838 3.838 0 0 0 .95-4.235 3.85 3.85 0 0 0-3.6-2.45h-35.34a6.834 6.834 0 0 0-4.698 1.872c-3.312 3.113-4.564 6.159-3.722 9.054.791 2.72 3.247 4.442 5.566 5.495-13.32 13.706-15.749 31.661-15.853 32.476a2.608 2.608 0 0 0 2.59 2.94h7.869c-.018.123-.038.245-.038.373 0 11.721 9.536 21.257 21.257 21.257s21.257-9.536 21.257-21.257c0-.128-.02-.25-.038-.373h38.859c-.018.123-.038.245-.038.373 0 11.721 9.536 21.257 21.257 21.257s21.257-9.536 21.257-21.257c0-.128-.02-.25-.038-.373h11.225a2.61 2.61 0 0 0-.001-5.221zm-10.608 0h-42.181c1.292-10.493 10.254-18.646 21.09-18.646s19.799 8.153 21.091 18.646zM52.533 100.323a2.614 2.614 0 0 0-1.206-4.545c-2.215-.431-5.646-1.841-6.057-3.261-.233-.808.621-2.225 2.286-3.79.312-.293.71-.454 1.122-.454H80.76c-2.609 2.807-5.439 6.549-7.2 10.944-2.958 7.382-2.019 14.674 2.714 21.088 1.742 2.36 4.547 3.769 7.504 3.769h24.485c.239 0 5.889-.044 9.52-3.886 2.128-2.253 3.103-5.236 2.897-8.866a9.637 9.637 0 0 0-.643-2.915l-14.559-37.852c-.016-.041-.018-.047-.036-.088-.297-.728-1.473-4.489 4.57-7.007 7.934-3.306 7.936-3.307 10.832 2.487 3.223 6.445 15.613 33.505 18.668 40.186-11.778 1.875-20.991 11.542-22.17 23.534H35.717c1.355-5.957 5.554-19.692 16.816-29.344zm25.151 34.937c0 8.842-7.194 16.036-16.036 16.036s-16.036-7.193-16.036-16.036c0-.128-.02-.25-.038-.373H77.72c-.016.123-.036.246-.036.373zm81.297 0c0 8.842-7.194 16.036-16.036 16.036-8.842 0-16.036-7.193-16.036-16.036 0-.128-.02-.25-.038-.373h32.146c-.016.123-.036.246-.036.373z"
+                                fill="#000000" data-color="1"></path>
+                            <path
+                                d="M64.587 41.657H28.876c-4.343 0-7.876 3.533-7.876 7.877v21.539c0 4.343 3.533 7.877 7.876 7.877h35.711c4.343 0 7.876-3.533 7.876-7.877V49.534c0-4.344-3.533-7.877-7.876-7.877zm2.655 29.416a2.659 2.659 0 0 1-2.655 2.656H28.876a2.659 2.659 0 0 1-2.655-2.656V49.534a2.659 2.659 0 0 1 2.655-2.656h35.711a2.659 2.659 0 0 1 2.655 2.656v21.539z"
+                                fill="#621FCC" data-color="2"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h3>Curb-side<br> pickup</h3>
+                </div>
+            </div>
+            <div class="free-shoping">
+                <div class="icon">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="22 29.01 158 141.964"
+                        viewBox="22 29.01 158 141.964" height="56" width="41" xmlns="http://www.w3.org/2000/svg"
+                        data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <defs>
+                            <style>
+                                #comp-km3c06wy svg [data-color="1"] {
+                                    fill: #000000;
+                                }
+
+                                #comp-km3c06wy svg [data-color="2"] {
+                                    fill: #751FFF;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <path
+                                d="M180 57.344c0-15.623-12.711-28.334-28.334-28.334-15.583 0-28.265 12.646-28.33 28.214L88.453 42.025a2.773 2.773 0 0 0-2.297.035L58.541 55.089a2.779 2.779 0 0 0-1.113.525L23.594 71.578c-.071.033-.13.08-.197.118-.039.022-.082.033-.12.057-.039.025-.073.055-.111.081a2.79 2.79 0 0 0-.441.386c-.02.022-.036.045-.055.067a2.736 2.736 0 0 0-.241.328c-.019.03-.039.059-.056.089a2.797 2.797 0 0 0-.197.418c-.011.029-.019.059-.029.089a2.816 2.816 0 0 0-.101.397c-.005.029-.013.058-.017.088a3.092 3.092 0 0 0-.029.397v65.903c0 1.088.635 2.076 1.624 2.529l61.681 28.197.015.005a2.692 2.692 0 0 0 .628.192c.161.03.324.051.488.052.008 0 .016.003.023.003.19 0 .378-.026.562-.065l.113-.024c.179-.045.354-.106.521-.186.011-.005.024-.007.035-.013l62.562-30.841a2.78 2.78 0 0 0 1.551-2.494V85.674C167.363 85.599 180 72.921 180 57.344zm-92.612-9.717l36.648 15.968a28.307 28.307 0 0 0 7.311 13.467l-13.602 6.705-52.128-25.868 21.771-10.272zm-.972 51.584L31.381 74.052l27.825-13.128 52.266 25.936-25.056 12.351zm-58.855-20.79l56.12 25.655v59.788l-56.12-25.654V78.421zm61.681 85.3v-59.703l26.088-12.86 2.287 25.914a2.78 2.78 0 1 0 5.538-.489l-2.476-28.062 15.349-7.566a28.177 28.177 0 0 0 10.215 4.196v50.472l-57.001 28.098zm62.424-83.604c-12.557 0-22.773-10.216-22.773-22.773s10.216-22.773 22.773-22.773 22.773 10.216 22.773 22.773c0 12.556-10.216 22.773-22.773 22.773z"
+                                fill="#000000" data-color="1"></path>
+                            <path
+                                d="M147.434 68.5h-.041a2.778 2.778 0 0 1-1.956-.846l-7.506-7.747a2.781 2.781 0 0 1 3.994-3.87l5.568 5.746 13.928-13.551a2.781 2.781 0 0 1 3.878 3.986l-15.925 15.494a2.781 2.781 0 0 1-1.94.788z"
+                                fill="#621FCC" data-color="2"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h3>Free shipping on<br> orders over $50</h3>
+                </div>
+            </div>
+            <div class="low-price">
+                <div class="icon">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="31.078 22 137.843 155.564"
+                        viewBox="31.078 22 137.843 155.564" height="56" width="41" xmlns="http://www.w3.org/2000/svg"
+                        data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                        <defs>
+                            <style>
+                                #comp-km3aqc4u svg [data-color="1"] {
+                                    fill: #000000;
+                                }
+
+                                #comp-km3aqc4u svg [data-color="2"] {
+                                    fill: #751FFF;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <path
+                                d="M165.922 22h-91.44a3 3 0 0 0-3 3v23.227H43.554c-6.879 0-12.476 5.596-12.476 12.475v113.862a3 3 0 0 0 3 3h91.439a3 3 0 0 0 3-3v-23.227h22.981c.515 0 1.021-.033 1.525-.077.586.072.949.077.97.077.63 0 1.211-.197 1.691-.53 7.588-1.882 13.237-8.732 13.237-16.893V25a2.999 2.999 0 0 0-2.999-3zm-43.404 149.564h-85.44V60.702a6.482 6.482 0 0 1 6.476-6.475h80.761c-1.081 1.815-1.797 4.091-1.797 6.924v110.413zm5.999-91.275V61.15c0-5.235 4.024-6.637 5.111-6.92 6.865.175 7.302 6.121 7.32 7.307v74.748c0 3.978.928 6.897 2.283 9.051h-14.714V80.289zm34.405 53.624c0 5.793-4.337 10.58-9.932 11.315-2.077-.37-6.042-1.986-6.042-8.942V61.538c0-.338-.047-3.396-1.662-6.53-2.255-4.373-6.506-6.781-11.97-6.781H77.481V28h85.44v105.913z"
+                                fill="#000000" data-color="1"></path>
+                            <path
+                                d="M61.465 131.135c-.532 0-1.07-.141-1.557-.439a2.998 2.998 0 0 1-1.003-4.121l33.218-54.572a2.998 2.998 0 1 1 5.124 3.118L64.03 129.694a2.997 2.997 0 0 1-2.565 1.441z"
+                                fill="#621FCC" data-color="2"></path>
+                            <path
+                                d="M63.84 98.509c-8.196 0-14.864-6.668-14.864-14.864 0-8.195 6.668-14.863 14.864-14.863s14.864 6.668 14.864 14.863c0 8.197-6.668 14.864-14.864 14.864zm0-23.726c-4.887 0-8.864 3.976-8.864 8.863s3.977 8.864 8.864 8.864 8.864-3.977 8.864-8.864-3.977-8.863-8.864-8.863z"
+                                fill="#621FCC" data-color="2"></path>
+                            <path
+                                d="M96.465 129.355c-8.196 0-14.864-6.668-14.864-14.864s6.668-14.864 14.864-14.864 14.864 6.668 14.864 14.864-6.668 14.864-14.864 14.864zm0-23.728c-4.887 0-8.864 3.977-8.864 8.864s3.977 8.864 8.864 8.864 8.864-3.977 8.864-8.864-3.977-8.864-8.864-8.864z"
+                                fill="#621FCC" data-color="2"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h3>Low prices<br>guaranteed</h3>
+                </div>
+            </div>
+            <div class="available">
+                <div class="icon">
+                    <svg preserveAspectRatio="xMidYMid meet" data-bbox="18.037 24.249 169.427 148.092"
+                        viewBox="18.037 24.249 169.427 148.092" height="56" width="41"
+                        xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true"
+                        aria-label="">
+                        <defs>
+                            <style>
+                                #comp-km3aq0qx svg [data-color="1"] {
+                                    fill: #000000;
+                                }
+
+                                #comp-km3aq0qx svg [data-color="2"] {
+                                    fill: #751FFF;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <path
+                                d="M169.8 117c-2.1-.7-4.4.4-5.1 2.5-7.8 23-27.6 39.8-51.5 43.8-34 5.7-66.4-15.7-74.9-48.5l6.4 4.5c.9.6 2 .9 3 .7 1-.2 2-.7 2.6-1.6 1.3-1.8.9-4.3-.9-5.6l-14.6-10.4c-1.8-1.3-4.3-.9-5.6.9L18.8 118c-1.3 1.8-.9 4.3.9 5.6 1.8 1.3 4.3.9 5.6-.9l4.9-6.9c9 37.4 45.7 62 84.2 55.5 26.8-4.5 49-23.4 57.8-49.2.8-2.1-.3-4.4-2.4-5.1z"
+                                fill="#000000" data-color="1"></path>
+                            <path
+                                d="M185.8 77c-1.8-1.3-4.3-.9-5.6.9l-5.2 7.3c-7.1-39.8-45.2-66.7-85.2-59.9-23.8 4-44.2 19.4-54.5 41.2-.9 2-.1 4.4 1.9 5.3 2 .9 4.4.1 5.3-1.9C51.8 50.6 70 36.8 91.2 33.2c35.3-6 68.8 17.4 75.7 52.3l-6.1-4.3c-1.8-1.3-4.3-.9-5.6.9-1.3 1.8-.9 4.3.9 5.6l14.6 10.4c.9.6 2 .9 3 .7 1-.2 2-.7 2.6-1.6l10.4-14.6c1.3-1.8.9-4.3-.9-5.6z"
+                                fill="#000000" data-color="1"></path>
+                            <path
+                                d="M98 124c-.5 0-1.1-.1-1.6-.3-1.5-.6-2.4-2.1-2.4-3.7V51.9c0-2.2 1.8-4 4-4s4 1.8 4 4v58.8l25.8-24.6c1.6-1.5 4.1-1.5 5.7.1 1.5 1.6 1.5 4.1-.1 5.7l-32.5 31c-.9.8-1.9 1.1-2.9 1.1z"
+                                fill="#621fcc" data-color="2"></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h3> Available to<br> you 24/7 </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cards slider -->
+    <section class="card-slider-section">
+        <div class="title">
+            <h1>Best Sellers</h1>
+        </div>
+
+        <div class="card-slider">
+            <div class="slide-left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="card-slider-inner">
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/laptop.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>JP Gaming Laptop 15.6" Laptop 256GB</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $75.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.5 (6)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/action-camera.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Megapixel Waterproof Mini Digital Camera</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>5.0 (1)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/drone.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>HKI Tech Quadcopter Drone With 360 Camera &amp; Controller</p>
+                    </div>
+                    <div class="price">
+                        <p>$85.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.3 (5)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <div class="sale">
+                        <span>SALE</span>
+                    </div> -->
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/laptop.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>SDK Portable Bluetooth Speaker</p>
+                    </div>
+                    <div class="price">
+                        <p>$85.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.7 (2)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/in-ear-noise.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>In-ear Noise Cancelling &amp; Isolating Wireless Earbuds</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$80.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.6 (1)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/space-tablet.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>JP - Space Tablet 10.4" Wi-Fi 32GB</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.2 (9)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/tablet.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Ocean Pro 11 - 12.3" Touch Screen</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.5 (7)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <div class="sale">
+                        <span>SALE</span>
+                    </div> -->
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/monitor.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Shel 50" Class LED 4K UHD Smart TV</p>
+                    </div>
+                    <div class="price">
+                        <p>$85.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.8 (6)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/smart-band.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Fitboot Inspire Fitness Tracker With Heart Rate Tracking</p>
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.1 (14)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/smart-phone.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Smartphone Z Pixel Max 128GB Unlocked</p>
+                    </div>
+                    <div class="price">
+                        <p>$70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.2 (3)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/smart-monitor.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>65" Class Nano LED 4K UHD Smart TV</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.3 (12)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <div class="sale">
+                        <span>SALE</span>
+                    </div> -->
+
+                    <div class="img">
+                        <a href="#"><img src="img/cart/ear-bud.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>White Buds Wireless Earbud Headphones</p>
+                    </div>
+                    <div class="price">
+                        <p> $80.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>3.9 (5)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#">View All</a>
+        </div>
+    </section>
+    <section class="shop-by-cat">
+        <div class="title">
+            <h1>Shop by Category</h1>
+        </div>
+        <div class="categories-line-1">
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/computer.jpeg" class="cat-img-hover"
+                            alt=""></a>
+                </div>
+                <div class="text"><a href="#">Computer</a></div>
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/phone.jpeg" class="cat-img-hover" alt=""></a>
+                </div>
+                <div class="text"><a href="#">Mobile</a></div>
+
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/drone.jpeg" class="cat-img-hover" alt=""></a>
+                </div>
+                <div class="text"><a href="#">Drone & Cameras</a></div>
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/sale.png" class="cat-img-hover" alt=""></a>
+                </div>
+                <div class="text"><a href="#">Sale</a></div>
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/tablet.jpeg" class="cat-img-hover" alt=""></a>
+                </div>
+                <div class="text"><a href="#">Tablets</a></div>
+
+            </div>
+        </div>
+        <div class="categories-line-2">
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/best-sellers.png" class="cat-img-hover"
+                            alt=""></a></div>
+                <div class="text"><a href="#">Best Sellers</a></div>
+
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/tvhomecinema.jpeg" class="cat-img-hover"
+                            alt=""></a></div>
+                <div class="text"><a href="#">TV & Home Cinema</a></div>
+
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/smartWatches.jpeg" class="cat-img-hover"
+                            alt=""></a></div>
+                <div class="text"><a href="#">Wearable Tech</a></div>
+
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/speakers.jpeg" class="cat-img-hover"
+                            alt=""></a></div>
+                <div class="text"><a href="#">Speakers</a></div>
+
+            </div>
+            <div class="inner">
+                <div class="round-img"><a href="#"><img src="img/category/headPhones.jpg" class="cat-img-hover"
+                            alt=""></a></div>
+                <div class="text"><a href="#">Headphones</a></div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="best-price-section">
+        <img src="img/laptop-box.webp" alt="">
+
+        <div class="text-bg">
+
+        </div>
+        <div class="text">
+            <div class="save-upto">Save up to</div>
+            <h2>$150</h2>
+            <h1>on selected laptop<br>
+                & tablets brands</h1>
+            <p>Terms and conditions apply</p>
+            <button>Shop</button>
+
+        </div>
+        <div class="best-price">
+            Best <br>Price
+        </div>
+
+    </section>
+    <section class="mobile-view-best-offer">
+        <div class="text-mobile-view">
+            <div class="save-upto">Save up to</div>
+            <h2>$150</h2>
+            <h1>on selected laptop<br>
+                & tablets brands</h1>
+            <p>Terms and conditions apply</p>
+            <button>Shop</button>
+
+        </div>
+    </section>
+
+    <section class="card-slider-section">
+        <div class="title">
+            <h1>Best Sellers</h1>
+        </div>
+
+        <div class="card-slider">
+            <div class="slide-left" id="slideleftonsale">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="card-slider-inner" id="cardSliderInner">
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/bluetooth-speaker.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Turn5 Portable Bluetooth Speaker</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $75.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.5 (6)</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/cctv.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>H1C Indoor Wireless 1080p Network Security Camera</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>5.0 (1)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/glass-x-virtual.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Journey Glass XD Virtual Reality Headset</p>
+                    </div>
+                    <div class="price">
+                        <p>$85.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.3 (5)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <!-- <div class="sale">
+                    <span>SALE</span>
+                </div> -->
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/iphone.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>OVE Light Space 5G, 128GB</p>
+                    </div>
+                    <div class="price">
+                        <p>$85.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.7 (2)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/mack-book.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Pilates 16" Touch Screen Laptop 24GB Memory</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$80.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.6 (1)</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="sale">
+                        <span>SALE</span>
+                    </div>
+
+                    <div class="img">
+                        <a href="#"><img src="img/onsale/watch.webp" class="card-img" alt=""></a>
+                    </div>
+                    <div class="desc">
+                        <p>Space Moon Smartwatch With Charger</p>
+                    </div>
+                    <div class="price">
+                        <p><del>$85.00</del> $70.00</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i> <span>4.2 (9)</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slide-right" id="sliderightonsale">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#">View All</a>
+        </div>
+    </section>
+    <section class="drone-section">
+        <div class="drone-container">
+            <div class="img"><img src="img/drone.webp" alt=""></div>
+            <div class="drone-bg">
+
+            </div>
+            <div class="text">
+                <span class="today">Today's Special</span>
+                <p>Best Arial View in Town</p>
+                <h1><span class="percent">30%</span>OFF</h1>
+                <p>on professional camera drones</p>
+                <h6>Limited quantities.<br>
+                    See product detail pages for availability.</h6>
+                <button>Shop</button>
+            </div>
+        </div>
+    </section>
+    <section class="drone-section-mobile-view">
+        <div class="text">
+            <span class="today">Today's Special</span>
+            <p>Best Arial View in Town</p>
+            <h1><span class="percent">30%</span>OFF</h1>
+            <p>on professional camera drones</p>
+            <h6>Limited quantities.<br>
+                See product detail pages for availability.</h6>
+            <button>Shop</button>
+        </div>
+        <div class="bg">
+        </div>
+        <div class="img">
+            <img src="img/drone.webp" alt="">
+        </div>
+    </section>
+    <section class="brand-section">
+        <div class="title">
+            <h1>Brands</h1>
+        </div>
+        <div class="brand">
+
+            <div class="brand-div">
+                <img src="img/brands/gxl.png" alt="">
+            </div>
+            <div class="brand-div">
+                <img src="img/brands/horizon.png" alt="">
+            </div>
+            <div class="brand-div">
+                <img src="img/brands/pjk.png" alt="">
+            </div>
+            <div class="brand-div">
+                <img src="img/brands/zodiac.png" alt="">
+            </div>
+            <div class="brand-div">
+                <img src="img/brands/zoro.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="newslatter-section">
+        <div class="title">Newsletter</div>
+        <div class="Newsletter">
+            <p>Sign up to receive updates on new arrivals and special offers</p>
+            <div class="mail-box">
+                <span>Email <sup>*</sup></span>
+                <div class="input-box">
+
+                    <input type="email" placeholder="Enter your email"><button>Subscribe</button>
+                </div>
+                <div class="input-box-mobile">
+                    <input type="email" placeholder="Enter your email"><button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="help-section"> 
+        <div class="text-div">
+            <div class="bg">
+
+            </div>
+            <div class="text">
+                <h3>Need Help? Check<br> Out Our Help Center</h3>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <button>Go to Help Center</button>
+            </div>
+        </div>
+        <div class="img-div">
+            <img src="img/help-center.webp" alt="">
+        </div>
+
+    </section>
+    <div class="help-section-mobile">
+        <div class="text-div">
+            <div class="text">
+                <h3>Need Help? Check<br> Out Our Help Center</h3>
+                <p>I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
+                <button>Go to Help Center</button>
+            </div>
+        </div>
+        <div class="img-div">
+            <img src="img/help-center.webp" alt="">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-div">
+            <div class="s-location">
+                <h2>Store Location</h2>
+                <ul>
+                    <li>500 Terry Francine Street</li>
+                    <li>San Francisco, CA 94158</li>
+                    <li>info@mysite.com</li>
+                    <li>123-456-7890</li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shop">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="#">Shop All</a></li>
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Tablets</a></li>
+                    <li><a href="#">Drones & Cameras</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">T.V & Home Cinema</a></li>
+                    <li><a href="#">Wearable Tech</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="C-support">
+                <h2>Customer Support</h2>
+                <ul>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Carrer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="policy">
+                <h2>Policy</h2>
+                <ul>
+                    <li>
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Condition</a>
+                    </li>
+                    <li>
+                        <a href="#">Payment Methods</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="divider-footer">
+
+        <div class="payment-card-section">
+            <p>We accept the following paying methods</p>
+            <div class="imges-div">
+                <img src="img/PaymentCard/brand-amex.webp" alt="">
+                <img src="img/PaymentCard/brand-chinaunionpay.webp" alt="">
+                <img src="img/PaymentCard/brand-jcb.webp" alt="">
+                <img src="img/PaymentCard/brand-mastercard.webp" alt="">
+                <img src="img/PaymentCard/Diners.webp" alt="">
+                <img src="img/PaymentCard/Discover.webp" alt="">
+                <img src="img/PaymentCard/PayPal.webp" alt="">
+                <img src="img/PaymentCard/Visa.webp" alt="">
+            </div>
+        </div>
+       
+    </footer>
+    <div class="copyright">
+        <p>© 2024 by TechShed. Powered and secured by Rajesh</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
